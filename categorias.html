@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arte Contemporáneo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <script src="main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(40, 132, 132);
+        }
+        h2 {
+            color: rgb(40, 132, 132);
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .contenedorca {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e6ce6e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-left {
+            float: left;
+            margin-right: 20px;
+        }
+        .image-right {
+            float: right;
+            margin-left: 20px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="logo.png" alt="Logotipo de marca" class="logo" align="right">
+
+    <div class="contenedor">
+        <div class="contedor-de-buscador">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Buscar..." name="query" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="entrevistas.html">Entrevistas</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br>
+
+    <div class="contenedorca">
+        <h1>Categorías del Arte Contemporáneo</h1>
+
+        <div class="clearfix">
+            <h2>Arte Abstracto</h2>
+            <img src="arte/abstracto.jpg" alt="abstracto" width="15%" height="15%" class="image-left">
+            <p>El arte abstracto se centra en formas, colores y texturas en lugar de representaciones exactas de objetos del mundo real. Los artistas abstractos usan estos elementos para expresar emociones y conceptos.</p>
+        </div>
+
+        <div class="clearfix">
+            <h2>Arte Conceptual</h2>
+            <img src="arte/conseptual.jpg" alt="conceptual" width="10%" height="10%" class="image-right">
+            <p>El arte conceptual pone más énfasis en la idea o concepto detrás de la obra que en el producto final. A menudo desafía las nociones tradicionales de lo que puede ser considerado arte.</p>
+        </div>
+
+        <div class="clearfix">
+            <h2>Performance Art</h2>
+            <img src="arte/performance.jpg" alt="performance" height="10%" width="10%" class="image-left">
+            <p>El performance art implica la creación de obras en vivo, a menudo con la participación del artista o de espectadores. Este tipo de arte puede ser provocador y a menudo es efímero.</p>
+        </div>
+
+        <div class="clearfix">
+            <h2>Arte Digital</h2>
+            <img src="arte/digital.jpg" alt="digital" height="15%" width="15%" class="image-left">
+            <p>El arte digital incluye trabajos creados o modificados mediante tecnología digital. Esto puede incluir gráficos por computadora, animaciones, videoarte y más.</p>
+        </div>
+
+        <div class="clearfix">
+            <h2>Arte Urbano</h2>
+            <img src="arte/urbano.jpg" alt="urbano" height="15%" width="15%" class="image-left">
+            <p>El arte urbano, también conocido como street art, incluye obras de arte creadas en espacios públicos. Esto puede incluir murales, grafiti, instalaciones y otras formas de expresión visual.</p>
+        </div>
+
+        <div class="clearfix">
+            <h2>Instalaciones</h2>
+            <img src="arte/instalaciones.jpg" alt="instalaciones" width="15%" height="15%" class="image-left">
+            <p>Las instalaciones son obras de arte que transforman un espacio determinado, a menudo creando una experiencia inmersiva para el espectador. Pueden incluir elementos como sonido, video, objetos y luz.</p>
+        </div>
+
+        <div class="clearfix">
+            <h2>Videoarte</h2>
+            <img src="arte/videoarte.jpg" alt="videoarte" width="15%" height="15%" class="image-left">
+            <p>El videoarte utiliza el medio del video para crear piezas artísticas. Este género puede abarcar desde cortometrajes hasta instalaciones complejas que combinan imagen y sonido.</p>
+        </div>
+
+        <div class="clearfix">
+            <h2>Arte Textil</h2>
+            <img src="arte/textil.jpg" alt="textil" width="15%" height="15%" class="image-left">
+            <p>El arte textil utiliza materiales como tela, hilo y fibras para crear obras de arte. Este tipo de arte puede incluir tapices, bordados, tejidos y otras técnicas tradicionales y contemporáneas.</p>
+        </div>
+    </div>
+</body>
+</html>
